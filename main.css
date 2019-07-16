@@ -1,0 +1,22 @@
+h1 {
+  color: black;
+  font-family: 'Baloo';
+  font-size: 35px
+}
+
+body{
+  background-color: PowderBlue;
+  font-family: 'Fredericka the Great';
+  font-size: 17px
+}
+function ColorChange() {
+  if (document.body.style.backgroundColor === "pink"){
+    document.body.style.backgroundColor = "PowderBlue";
+    document.body.style.color= "Black";
+    document.getElementById('h1').style.color = "Black";
+  }else{
+    document.body.style.backgroundColor = "Pink";
+    document.body.style.color = "MediumVioletRed";
+    document.getElementById('h1').style.color = "HotPink";
+  }
+}
